@@ -1,48 +1,24 @@
-// .container_slider{
-//     background-image: url(..//images/slider.jpg);
-//     background-repeat: no-repeat;
-//     // background-size: 100%;
-//     background-position: 50%;
-//     padding: 50px;
-//     text-align: center;
-// }
-// #BA9F65
-// .container_slider::before{
-//     background-color: rgba(0, 0, 0, 0.5);
-//     content: "";
-//     height: 100%;
-//     left: 0;
-//     position: absolute;
-//     top: 0;
-//     width: 100%;
-// }
-// .sliider__heading{
-//     color: #FFFFFF;
-//     font-family: "Oswald", Sans-serif;
-//     font-size: 40px;
-//     font-weight: 700;
-// }
-// .slider__description{
-//     color: #FFFFFF;
-//     font-family: "Roboto", Sans-serif;
-//     font-size: 13px;
-//     padding: 30px 0px;
-//     line-height: 1.4;
-// }
-// .slider__button{
-//     font-family: "Roboto", Sans-serif;
-//     font-size: 20px;
-//     font-weight: 300;
-//     text-transform: uppercase;
-//     letter-spacing: 2px;
-//     border-radius: 1px;
-//     background-color: #BA9F65;
-//     padding: 12px 24px;
-//     transition: all .3s;
-//     border: 2px solid #fff;
-//     color: #fff;
-//     display: inline-block;
-// }
-// .slider__button_hover:hover{
-//     background-color: #000000;
-// }
+@import "mixins";
+.slider::before{
+    background-color: rgba(0, 0, 0, 0.3);
+    content: "";
+    width: 95%;
+    height: 500px;
+    position: absolute;
+    top: 251px;
+    left: 22px;
+    z-index: 10;
+}
+.slider{
+    .container, .container_slider{
+        position: relative;
+        max-width: 95%;
+        max-height: 450px;
+        .carousel-caption{
+            z-index: 20;
+        }
+        .slider__button{
+            @include button;
+        }
+    }
+}

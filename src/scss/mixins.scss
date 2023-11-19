@@ -4,9 +4,17 @@
 // }
 
 @mixin button{
-
-}
-
-@mixin separator{
-    
+    text-align: center;
+    width: 200px;
+    font-size: 16px;
+    padding: 5px;
+    font-family: "Roboto", Sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-style: solid;
+    border-color: #02010100;
+    background-color: #ba9f65;
 }
