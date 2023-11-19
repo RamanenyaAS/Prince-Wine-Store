@@ -1,0 +1,67 @@
+@import "variables";
+@import "mixins";
+.product{
+    .container, .container_product{
+        text-align: center;
+        .product-block{
+            .product-block-item{
+                .product-block-item__link{
+                    justify-items: center;
+                    align-items: center;
+                    display: grid;
+                    .product-block-item__image{
+                        padding-top: 15px;
+                    }
+                    .product-block-item__title{
+                        font-family:'Roboto', sans-serif;
+                        font-size: 15px;
+                        hyphens: auto;
+                        word-wrap: break-word;
+                        font-weight: $main-font-weight;
+                        color: #000;
+                        &:visited{
+                            text-decoration: underline;
+                        }
+                    }
+                    .product-block-item__price{
+                        color: $main-color;
+                        font-size: 20px;
+                        font-family:'Roboto', sans-serif;
+                        font-weight: 700;
+                        margin: 25px 0px;
+                        .product-block-item__price_sale{
+                            font-weight: normal;
+                            text-decoration: line-through;
+                        }
+                    }
+                    .product-block-item__button{
+                        padding: 10px 15px;
+                        font-weight: 600;
+                        font-family: "Roboto", sans-serif;
+                        background: #ba9f65;
+                        color: #fff;
+                        font-size: 13px;
+                        line-height: 1;
+                        white-space: nowrap;
+                        margin-bottom: 25px;
+                        &:hover{
+                            background: #000;
+                        }
+                        &:active, &:focus{
+                            background: #006bb4;
+                        }
+                        &:last-child{
+                            margin-bottom: 50px
+                        }
+                    }
+                }
+            }
+        }
+        .product__button{
+            @include button;
+            font-size: 15px;
+            border-radius: 3px;
+            padding: 8px 24px;
+        }
+    }
+}

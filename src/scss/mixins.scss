@@ -2,19 +2,20 @@
 // @mixin name{
 
 // }
-
+// @include name; для применения 
 @mixin button{
     text-align: center;
-    width: 200px;
     font-size: 16px;
-    padding: 5px;
+    padding: 12px 24px;
     font-family: "Roboto", Sans-serif;
     font-size: 20px;
     font-weight: 300;
-    text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
-    border-style: solid;
-    border-color: #02010100;
     background-color: #ba9f65;
+    color: #fff;
+    transition: all .3s;
+    &:hover{
+        background: #000;
+    }
 }
