@@ -1,0 +1,20 @@
+.popular{
+    .container{
+        .popular-block{
+            text-align: center;
+            .popular-block__title{
+                font-family: "Oswald", Sans-serif;
+                font-size: 40px;
+                font-weight: 400;
+                line-height: 1.3em;
+            }
+            .popular-block__subtitle{
+                font-family: "Oswald", Sans-serif;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                padding: 25px;
+            }
+        }
+    }
+}

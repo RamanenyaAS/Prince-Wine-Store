@@ -1,14 +1,27 @@
-.slogan-block{
-    .fa-quote-left-alt:before, .fa-quote-left:before {
-        content: "\f10d";
-        font-size: 40px;
-        color: #BA9F65;
-    }
-    .slogan-block__caption{
-        font-size: 30px;
-        font-style: italic;
-        font-family: "Oswald", Sans-serif;
-        font-weight: 300;
-        line-height: 1.3em;
+.slogan{    
+    .container{
+        .slogan-block{
+            padding: 10px 20px 10px 20px;
+            .fa-quote-left-alt:before, .fa-quote-left:before {
+                content: "\f10d";
+                font-size: 40px;
+                color: #BA9F65;
+            }
+            .slogan-block__caption{
+                font-size: 30px;
+                font-style: italic;
+                font-family: "Oswald", Sans-serif;
+                font-weight: 300;
+                line-height: 1.3em;
+                text-align: center;
+            }
+            .slogan-block__acclaimed{
+                font-size: 20px;
+                font-family: "Oswald", Sans-serif;
+                font-weight: 900;
+                line-height: 1.3em;
+                text-align: center;
+            }
+        }
     }
 }
