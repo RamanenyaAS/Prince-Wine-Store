@@ -54,6 +54,10 @@
                 border-radius: 4px;
                 line-height: 1.42857143;
                 outline: none;
+                &:hover{
+                    background-color: $main-color;
+                    border: none;
+                }
             }
         }
     }

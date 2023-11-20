@@ -1,0 +1,34 @@
+@import "variables";
+.articles{
+    text-align: center;
+    .container, .container_articles{
+        display: flex;
+        flex-wrap: wrap;
+        .articles-block{
+            .articles-block__image{
+                max-width: 95%;
+                padding: 20px 0px;
+            }
+            .articles-block__title{
+                font-size: 22px;
+                font-family: $title-font-family;
+                color: $main-color;
+                font-weight: 600;
+                line-height: 1.5em;
+            }
+            .articles-block__subtitle{
+                font-size: 16px;
+                line-height: 1.5em;
+                color: #777;
+                font-family: 'Roboto', sans-serif;
+            }
+            .articles-block__link{
+                color: $main-color;
+                margin-bottom: 20px;
+                font-size: 18px;
+                font-weight: $main-font-weight;
+                font-family: $button-font-family;
+            }
+        }
+    }
+}

@@ -34,6 +34,9 @@
                     font-weight: $button-font-weight;
                     letter-spacing: 2px;
                     border: 1px solid;
+                    &:hover{
+                        background-color: #000;
+                    }
                     .store-link__caption{
                         text-align: center;
                     }
