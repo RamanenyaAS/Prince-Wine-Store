@@ -1,15 +1,16 @@
 @import "mixins";
-.slider::before{
-    background-color: rgba(0, 0, 0, 0.3);
-    content: "";
-    width: 95%;
-    height: 500px;
-    position: absolute;
-    top: 251px;
-    left: 22px;
-    z-index: 10;
-}
 .slider{
+    position: relative;
+    &::before{
+        content: "";
+        z-index: 10;
+        background-color: #0000004d;
+        width: 92%;
+        height: 98%;
+        position: absolute;
+        top: 18px;
+        left: 33px;
+    }
     .container, .container_slider{
         position: relative;
         max-width: 95%;
