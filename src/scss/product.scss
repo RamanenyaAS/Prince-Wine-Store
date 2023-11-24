@@ -64,3 +64,43 @@
         }
     }
 }
+@media (min-width:800px){
+    .product-block{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:  repeat( 2, 1fr);   
+    }
+    .product-block-item__button{
+        display: none;
+    }
+    .product-block-item:nth-child(4){
+        display: none;
+    }
+    .product-block-item:nth-of-type(10){
+        display: none;
+    }
+    .product-block-item:nth-child(5){
+        display: none;
+    }
+    .product-block-item:nth-of-type(9){
+        display: none;
+    }
+}
+    @media (min-width:1320px){
+        .product-block{
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows:  repeat( 2, 1fr);   
+        }
+        .product-block-item:nth-child(4){
+            display: grid;
+        }
+        .product-block-item:nth-of-type(10){
+            display: grid;
+        }
+        .product-block-item:nth-child(5){
+            display: grid;
+        }
+        .product-block-item:nth-of-type(9){
+            display: grid;
+        }
+}

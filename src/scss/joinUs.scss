@@ -11,8 +11,13 @@
             .joinUs-block__image{
                 vertical-align: middle;
                 max-width: 48%;
-                padding: 10px;
+                padding: 3px;
             }
         }
+    }
+}
+@media (min-width:800px) {
+    .joinUs-block__image{
+        max-width: 24% !important;
     }
 }

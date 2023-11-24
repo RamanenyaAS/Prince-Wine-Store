@@ -11,3 +11,12 @@
         font-family: 'Roboto', sans-serif;
     }
 }
+@media (min-width:800px){
+    .footer-bottom{
+        display: flex;
+    }
+    .bottom-block{
+        padding-left: 10px;
+        display: block !important;
+    }
+}

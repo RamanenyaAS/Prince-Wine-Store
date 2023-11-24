@@ -5,6 +5,8 @@
             grid-template-columns:  repeat(2,1fr);
             grid-template-rows: repeat(2,1fr) ;
             .offer-items{
+                align-items: center;
+                justify-items: center;
                 display: flex;
                 align-items: center;
                 .offer-items__image{
@@ -20,6 +22,39 @@
                 }
                 .offer-items:nth-child(2){
                     padding-right: 23px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 800px){
+    .offer{
+        .container{
+            .offer-block{
+                flex-wrap: wrap;
+                justify-content: center;
+                display: flex;
+                .offer-items{
+                    padding: 5px;
+                    align-items: center;
+                    justify-items: center;
+                    display: flex;
+                    align-items: center;
+                    .offer-items__image{
+                        max-width: 40px;
+                        max-height: 40px;
+                    }
+                    .offer-items__caption{
+                        font-size: 22px;
+                        font-family: 'Oswald', Sans-serif;
+                        font-weight: 500;
+                        letter-spacing: 0.5px;
+                        padding: 0px 5px;
+                    }
+                    .offer-items:nth-child(2){
+                        padding-right: 23px;
+                    }
                 }
             }
         }

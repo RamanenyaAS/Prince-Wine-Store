@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./scss/footer.scss">
     <link rel="stylesheet" href="./scss/bottom.scss">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Oswald:wght@300;400;500;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"><body>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Oswald:wght@300;400;500;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"><body>
     <p class="top-page-announcements">....one of the World’s Top Ten Iconic Wine Shops     -     Wine Enthusiast Magazine</p>
     <header class="header">
         <div class="container container_header" >
@@ -44,9 +44,59 @@
                         <i class="fa-solid fa-bars" style="color: #ba9f65;"></i>
                     </div>
                     <div class="search">
+                        <input class="search__input" type="text" value="" placeholder="Search entire store here..." class="input-text" maxlength="128" role="combobox" aria-haspopup="false" aria-autocomplete="both" autocomplete="off" aria-expanded="false">
                         <i class="fa-solid fa-magnifying-glass" style="color: #4b4b4b;"></i>
                     </div>
                 </div> 
+                   <div class="container"> 
+                    <ul class="header-list">
+                        <li class="list-item">
+                            <a class="list-item__link" href="https://www.princewinestore.com.au/">
+                                <span class="list-item__caption">HOME</span>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a class="list-item__link" href="https://www.princewinestore.com.au/liquor.html?cat=1790%2C1787%2C1782%2C1781%2C1779%2C1758&topnav=wine">
+                                <span class="list-item__caption">WINE</span>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a class="list-item__link" href="https://www.princewinestore.com.au/liquor.html?cat=1778&topnav=spirits">
+                                <span class="list-item__caption">SPIRITS</span>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a class="list-item__link" href="https://www.princewinestore.com.au/mixed-dozens/">
+                                <span class="list-item__caption">PACKS</span>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a class="list-item__link" href="https://www.princewinestore.com.au/weekly_offer/">
+                                <span class="list-item__caption">OFFERS</span>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a class="list-item__link" href="https://www.princewinestore.com.au/upcoming-events/">
+                                <span class="list-item__caption">EVENTS</span>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a class="list-item__link" href="https://www.princewinestore.com.au/wine-education-courses/">
+                                <span class="list-item__caption">EDUCATION</span>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a class="list-item__link" href="https://www.princewinestore.com.au/contact-us/">
+                                <span class="list-item__caption">CONTACT</span>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a class="list-item__link" href="https://www.princewinestore.com.au/categorylist/accessories/glassware.html">
+                                <span class="list-item__caption">GLASSWARE</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -124,7 +174,6 @@
         </section> -->
         <section class="offer">
             <div class="container">
-                <div class="div">
                 <div class="offer-block">                   
                     <div class="offer-items">                        
                         <img class="offer-items__image" src="./images/box.svg" alt="box of wine">
@@ -142,7 +191,6 @@
                         <img class="offer-items__image" src="./images/box.svg" alt="box of wine">
                         <h2 class="offer-items__caption">CELLAR STORAGE<br>AVAILABLE</h2>
                     </div>
-                </div>
             </div>
         </div>
         </section>
@@ -247,7 +295,7 @@
                     <div class="product-block-item">
                         <a class="product-block-item__link" href="https://www.princewinestore.com.au/forman-cabernet-sauvignon-2020.html" style="text-decoration: none;">
                             <img class="product-block-item__image" src="./images/FormanCabernet.png" alt="wine image">
-                            <div class="product-block-item__title" >Forman Cabernet Sauvignon 2020</div>
+                            <div class="product-block-item__title" >Forman Cabernet Sauvignon 2020 <br></div>
                             <div class="product-block-item__price" >$250.00 <span class="product-block-item__price_sale">$295.00</span></div>
                             <div class="product-block-item__button" >Add to Cart</div>
                         </a>
@@ -278,7 +326,7 @@
                         </a>
                     </div>
                     <div class="promotion-box">
-                        <h2 class="promotion-box__title">PRINCE WINE CLASSES</h2>
+                        <h2 class="promotion-box__title"> <span class="promotion-box__title_big"> PRINCE WINE CLASSES</span> </h2>
                         <a class="promotion-box__link" style="text-decoration: none;" href="https://www.princewinestore.com.au/prince-wine-store-courses/">
                             SEE ALL
                         </a>
@@ -324,7 +372,7 @@
             <div class="container__separator"></div>
         </div>
         <section class="founders">
-            <div class="container">
+            <div class="container container_founders">
                 <div class="founders-block">
                     <p class="founders-block__caption">Maybe its easiest to start with who and what we are not! We are not a supermarket, discount chain, lowest-common-denominator liquor outlet.&nbsp; In some ways we are not even a retailer who could be selling anything; tyres, widgets or beanie boos! We can only sell one thing…WINE!</p>
                     <p class="founders-block__caption">What we are is&nbsp;an independently owned wine merchant,&nbsp;driven by our collective passion to source and share some of the greatest wines in the world with a similarly passionate&nbsp;group of punters…many of which are now friends and part of the PWS family.</p>
@@ -337,6 +385,8 @@
                         and&nbsp;
                         <a class="founders-block__link" style="text-decoration: none;color: #ba9f65;" href="https://www.princewinestore.com.au/michael-mcnamara/" target="_blank" rel="noopener">Michael McNamara</a>.
                     </p>
+                </div>
+                <div class="founders-block">
                     <img class="founders-block__image" src="./images/founders.jpg" alt="founders">
                 </div>
             </div>
@@ -345,6 +395,7 @@
             <div class="container container_stores">
                 <h2 class="container_stores__title">VISIT OUR STORES</h2>
                 <div class="container__separator"></div>
+                <div class="store-block">
                 <div class="store">
                     <img class="store__image" src="./images/melbourne.png" alt="melbourne store">
                     <h2 class="store__info">177 Bank Street<br>South Melbourne 3205<br>
@@ -358,7 +409,7 @@
                 </div>
                 <div class="store">
                     <img class="store__image" src="./images/sydney.png" alt="sydney store">
-                    <h2 class="store__info">40 Hansard Street (corner of Dunning Ave)<br>Zetland 2017<br>
+                    <h2 class="store__info">40 Hansard Street (corner of Dunning Ave)Zetland 2017<br>
                     </h2>
                     <div class="store-button">
                         <a class="store-link" style="text-decoration: none;" href="https://www.princewinestore.com.au/catalogsearch/result/index/?q=wine">
@@ -368,16 +419,19 @@
                     <div class="store__subtitle">PWS - ACKNOWLEDGES OUR LOCATION ON GADIGAL LAND</div>
                 </div>
             </div>
+            </div>
         </section>
         <section class="newsletter">
             <div class="container">
-                <form class="newsletter-form">
-                    <h2 class="newsletter-form__title">SIGN UP FOR OUR NEWSLETTER</h2>
-                    <p class="newsletter-form__subtitle">STAY UP TO DATE FOR EXCLUSIVE OFFERS AND NEWS EVENTS</p>
-                    <div class="newsletter-form__input-title">Your email address</div>
-                    <input class="newsletter-form__input" type="text" type="email" autocomplete="email" maxlength="255">
-                    <button class="newsletter-form__button" type="submit"> SUBSCRIBE</button>
-                </form>
+                <h2 class="newsletter-form__title">SIGN UP FOR OUR NEWSLETTER</h2>
+                <p class="newsletter-form__subtitle">STAY UP TO DATE FOR EXCLUSIVE OFFERS AND NEWS EVENTS</p>
+                <div class="newsletter-box">
+                    <form class="newsletter-form">
+                        <div class="newsletter-form__input-title">Your email address</div>
+                        <input class="newsletter-form__input" type="text" type="email" autocomplete="email" maxlength="255">
+                        <button class="newsletter-form__button" type="submit"> SUBSCRIBE</button>
+                    </form>
+                </div>
             </div>
         </section>
         <div class="container">
@@ -480,8 +534,10 @@
                     <img class="bottom-block__image" src="./images/mastercard.svg" alt="MasterCard">
                     <img class="bottom-block__image" src="./images/amex.svg" alt="American Express">
                 </div>
-                <p class="footer-bottom__caption">We accept the following Cards using TLS Security Certificate: Visa, Mastercard and American Express</p>
-                <p class="footer-bottom__info">It is against the law to sell or supply alcohol to, or to obtain alcohol on behalf of, a person under the age of 18 years. Liquor License Vic 319 524 38   NSW Liquor License LIQP724013283</p>
+                <div class="bottom-block">
+                    <p class="footer-bottom__caption">We accept the following Cards using TLS Security Certificate: Visa, Mastercard and American Express</p>
+                    <p class="footer-bottom__info">It is against the law to sell or supply alcohol to, or to obtain alcohol on behalf of, a person under the age of 18 years. Liquor License Vic 319 524 38   NSW Liquor License LIQP724013283</p>
+                </div>
             </div>
         </div>
     </footer>

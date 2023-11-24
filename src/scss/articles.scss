@@ -2,9 +2,10 @@
 .articles{
     text-align: center;
     .container, .container_articles{
-        display: flex;
         flex-wrap: wrap;
-        .articles-block{
+        justify-content: space-between;
+        display: flex;
+            .articles-block{
             .articles-block__image{
                 max-width: 95%;
                 padding: 20px 0px;
@@ -30,5 +31,10 @@
                 font-family: $button-font-family;
             }
         }
+    }
+}
+@media (min-width:800px){
+    .articles-block{
+        width: 33%;
     }
 }

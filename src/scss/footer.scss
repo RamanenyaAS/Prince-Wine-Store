@@ -32,9 +32,10 @@
         .footer-bottom{
             .bottom-block{
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 .bottom-block__image{
                     width: 80px;
+                    padding-right: 5px;
                 }
             }
             .footer-bottom__caption{

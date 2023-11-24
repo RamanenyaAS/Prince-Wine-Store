@@ -12,3 +12,12 @@
         }
     }
 }
+@media (min-width:800px){
+    .container_founders{
+        display: flex;
+    }
+    .founders-block__image{
+        padding-left: 10px;
+        max-width: 450px !important;
+    }
+}
