@@ -5,11 +5,11 @@
         content: "";
         z-index: 10;
         background-color: #0000004d;
-        width: 92%;
-        height: 98%;
+        width: 93%;
+        height: 100%;
         position: absolute;
         top: 18px;
-        left: 33px;
+        left: 43px;
     }
     .container, .container_slider{
         position: relative;
@@ -22,4 +22,9 @@
             @include button;
         }
     }
+}
+.carousel-item{
+    .w100{
+        height:449px
+    }    
 }
